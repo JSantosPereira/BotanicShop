@@ -1,1 +1,13 @@
 
+
+Controllers Missing
+  -Shop
+    -Display table
+    -Add to cart function
+    - 
+  -User
+    -User info details CRUD 
+  -Challenge
+    -Setup azblob image upload    
+Views Missing
+  - Product management for admin users(show on loginpartial ifUserIsAdmin())
