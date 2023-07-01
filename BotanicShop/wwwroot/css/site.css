@@ -1,0 +1,66 @@
+html {
+    font-size : 14px;
+}
+
+html {
+    position : relative;
+    min-height : 100%;
+}
+
+@media (min-width : 768px) {
+    html {
+        font-size : 16px;
+    }
+}
+
+@font-face {font-family: 'hibiscus';src: url('fonts/hibiscus.ttf') format('truetype');}
+@font-face {font-family: 'Botanic';src: url('fonts/Botanic.ttf') format('truetype');}
+@font-face {font-family: 'SpringSakura';src: url('fonts/springsakura.otf') format('opentype');}
+@font-face {font-family: 'Junitta';src: url('fonts/junitta.otf') format('opentype');}
+@font-face {font-family: 'AztechForest';src: url('fonts/aztechforest-9yja0.otf') format('opentype');}
+@font-face {font-family: 'RoseMary';src: url('fonts/rosemarryepersonaluse-mvg7j.ttf') format('truetype');}
+
+body {
+    margin-bottom : 60px;
+    margin : 0;
+    padding : 0;
+}
+
+footer {
+    color : white;
+    background-color : lightgreen;
+}
+
+
+.brand {
+    font-family : Junitta;
+    font-size : 3.2rem;
+    padding : 0px 25px;
+}
+.brand:hover {
+    background-color : lightgreen;
+
+}
+.nav-item {
+    font-family : Junitta;
+    font-size : 2.2rem;
+    padding : 10px;
+}
+    .nav-item:hover {
+        background-color : lightgreen;
+    }
+.PageHeader {
+    background-color : lightgreen;
+    text-align : center;
+    font-size : 3rem;
+    font-family : Junitta;
+    padding : 10px;
+}
+.get-center{
+    margin-left : auto;
+    margin-right : auto;
+}
+.PageContent {
+    
+    text-align : justify;
+}

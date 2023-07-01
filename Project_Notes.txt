@@ -1,0 +1,7 @@
+Azure:
+	Subscription: 	Rumos
+	Resource Group: BotanicCloudShop
+	Blob Storage:	bcsimageblobacc_1687807920391
+		Container:	
+			Name:	imageblobcont
+			URL:	https://bcsimageblobacc.blob.core.windows.net/imageblobcont	
