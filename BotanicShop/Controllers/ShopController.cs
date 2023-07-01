@@ -4,7 +4,7 @@ namespace BotanicShop.Controllers
 {
     public class ShopController : Controller
     {
-        public IActionResult Index()
+        public IActionResult ProductShop()
         {
             return View();
         }

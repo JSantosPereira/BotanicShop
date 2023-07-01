@@ -4,7 +4,11 @@ namespace BotanicShop.Controllers
 {
     public class ChallengeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult DailyChallenge()
+        {
+            return View();
+        }
+        public IActionResult AddaChallenge()
         {
             return View();
         }

@@ -9,7 +9,7 @@ namespace BotanicShop
 
         static int SalesNr = 1;
         public String ID { get; set; }
-        public DateTime timeofpurchase { get; set; }
+        public DateTime PurchaseTime { get; set; }
 
         public string UserID { get; set; }
         public string UserName  {get; set;}
@@ -24,11 +24,11 @@ namespace BotanicShop
             this.UserName = user.UserName ?? "";
             this.Items= products;
             this.ID = DateTime.Now.Year+"-"+SalesNr++;
-            this.timeofpurchase = DateTime.Now;
+            this.PurchaseTime = DateTime.Now;
         }
 
         // ###############################################################################################################
-        public string toString(){
+        override public string ToString(){
             return "Purchase toString() To be implemented";
         }
     }

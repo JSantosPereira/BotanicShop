@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Shop\" />
-    <Folder Include="Views\Shop\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
     <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />

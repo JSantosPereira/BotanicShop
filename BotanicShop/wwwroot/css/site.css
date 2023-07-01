@@ -52,7 +52,7 @@ footer {
 .PageHeader {
     background-color : lightgreen;
     text-align : center;
-    font-size : 3rem;
+    font-size : 3.2rem;
     font-family : Junitta;
     padding : 10px;
 }
@@ -63,4 +63,9 @@ footer {
 .PageContent {
     
     text-align : justify;
+}
+
+.Product-Table{
+    
+    margin:initial;
 }
