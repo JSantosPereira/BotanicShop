@@ -1,0 +1,39 @@
+﻿@model BotanicShop.Models.Image
+
+@{
+    ViewData["Title"] = "Challenge";
+}
+
+<h1 class="PageHeader">Challenge</h1>
+
+<hr />
+<h3 class="text-center">Can you indentify the specimen in the picture?</h3>
+
+<hr />
+<div >
+    <img />
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <input />
+                </td>
+                <td>
+                    <btn></btn>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<hr />
+<div class="get-center text-center ">
+    <p> Need help in discovering a species name?</p>
+    <a class="btn btn-secondary" asp-area="" asp-controller="Challenge" asp-action="AddChallenge">Add a Challenge</a>
+</div>
+
+<hr />
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

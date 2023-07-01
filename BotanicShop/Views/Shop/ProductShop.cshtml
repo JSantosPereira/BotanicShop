@@ -1,0 +1,38 @@
+﻿@model BotanicShop.Models.Product
+
+
+@{
+    ViewData["Title"] = "Product Shop";
+}
+
+<h1 class="PageHeader">Product shop</h1>
+
+
+<hr />
+<div >
+    <table class="product-table">
+        <tr>
+            <th> Name</th>
+            <th colspan="2"> Description</th>
+            <th> Quantity</th>
+        </tr>
+        <tr>
+
+                <td></td>
+                <td colspan="2"></td>
+                <td></td>
+                <td> Button + cart</td>
+            
+        </tr>
+        
+
+    </table>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
