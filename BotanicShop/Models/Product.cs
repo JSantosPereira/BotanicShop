@@ -34,7 +34,7 @@ namespace BotanicShop.Models
             Id = Guid.NewGuid().ToString();
             this.Name = name;
             this.Description = description!=null ? this.Description : "";
-            Quantity = Quantity+quantity;
+            Quantity += quantity;
             this.Price = price;
             ProductTag = tags;
         }

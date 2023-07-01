@@ -4,34 +4,37 @@
     ViewData["Title"] = "Challenge";
 }
 
-<h1 class="PageHeader">Challenge</h1>
+<div>
+    <h1 class="PageHeader">Challenge</h1>
+    <hr />
+</div>
 
-<hr />
-<h3 class="text-center">Can you indentify the specimen in the picture?</h3>
-
-<hr />
 <div >
+    <h3 class="text-center">Can you indentify the specimen in the picture?</h3>
+    <hr />
+
     <img />
     <form>
-        <table>
+        <table class="get-center">
             <tr>
-                <td>
-                    <input />
-                </td>
-                <td>
-                    <btn></btn>
-                </td>
+                <td> Your guess: </td>
+                <td> <input /></td>
+                <td> <button id="challengeSubmit" type="submit" class=" btn btn-secondary">Submit</button> </td>
+            </tr>            
+        </table>
+        <table class="get-center">
+            <tr>
+                <td>Need help in discovering a species name?</td>
+                <td> <a class="btn btn-secondary" asp-area="" asp-controller="Challenge" asp-action="AddChallenge">Add Challenge</a> </td>
+
             </tr>
         </table>
     </form>
-</div>
-<hr />
-<div class="get-center text-center ">
-    <p> Need help in discovering a species name?</p>
-    <a class="btn btn-secondary" asp-area="" asp-controller="Challenge" asp-action="AddChallenge">Add a Challenge</a>
+    <hr />
 </div>
 
-<hr />
+
+
 
 
 @section Scripts {
