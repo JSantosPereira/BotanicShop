@@ -8,7 +8,7 @@ namespace BotanicShop.Controllers
         {
             return View();
         }
-        public IActionResult AddaChallenge()
+        public IActionResult AddChallenge()
         {
             return View();
         }
