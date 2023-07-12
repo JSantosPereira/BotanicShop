@@ -11,10 +11,7 @@ namespace BotanicShop.Areas.Identity.Data;
 // Add profile data for application users by adding properties to the User class
 public class User : IdentityUser
 {
-    [Required]
-    [EmailAddress]
-    [Display(Name = "Email")]
-    public string Email { get; set; }
+    
 
     [Required]
     [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
@@ -55,10 +52,11 @@ public class User : IdentityUser
 
     public Roletype role { get; set; }
     
-    public User(string email,string password,string firstName, string lastName, string Address, string zipcode,string city, string country, string phonenr)
+    public User(string email,string password,string confpwd,string firstName, string lastName, string Address, string zipcode,string city, string country, string phonenr)
     {
         this.Email = email;
         this.Password = password;
+        this.ConfirmPassword = confpwd;
         this.Fname = firstName;
         this.Lname = lastName;
         this.Address = Address ?? "";
@@ -70,9 +68,11 @@ public class User : IdentityUser
         this.role = Roletype.User;
     }
     
-    public string ToString()
+    override public string ToString()
     {
+#pragma warning disable CS8603 // Possible null reference return.
         return Fname;
+#pragma warning restore CS8603 // Possible null reference return.
     }
     
 }
