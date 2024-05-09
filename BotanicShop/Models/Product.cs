@@ -1,5 +1,5 @@
 ﻿/* ###############################################################################################################
-    ?? Bool to check if product is soldable
+    ?? Bool to check if product is sellable
     
 ##################################################################################################################*/
 using System.ComponentModel.DataAnnotations;
@@ -43,7 +43,6 @@ namespace BotanicShop.Models
             Id = Guid.NewGuid().ToString();
             this.Name=name;
             this.Description = description!=null ? this.Description : "";
-            
         }
         // ###############################################################################################################
         public override string ToString()
